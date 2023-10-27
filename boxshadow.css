@@ -1,0 +1,8 @@
+#p1{
+    color: crimson;
+    border: 2px groove black;
+    padding: 12px;
+    margin: 50px;
+    box-shadow: 12px 14px 20px 10px pink ,-12px -14px 20px 5px grey;
+    /* box-shadow: x-axis y-axis blur-radius spread-radius color ,(if we want to add multiple shadows then add another coordinates) x-axis y-axis blur-radius spread-radius color;*/
+}

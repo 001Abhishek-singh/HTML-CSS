@@ -1,0 +1,19 @@
+#g1{
+    list-style-type:square;
+    /*list-style-position: inside;*/
+    list-style-image: url(mac_image_3.png);
+    overflow:auto;
+    border: 23px solid red;
+}
+
+#g2{
+    border: 23px solid salmon;
+    list-style-type: circle;
+    list-style-type: disc;
+    list-style-image: url(logo.png);
+}
+
+li{
+    border: 2px solid coral;
+    list-style-position:inside;
+}

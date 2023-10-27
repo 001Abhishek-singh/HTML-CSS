@@ -1,0 +1,11 @@
+/* in the css we can select any of the cursor type according to our need and requirements*/
+#p1{
+    color: red;
+    border: 2px groove blueviolet;
+    cursor: all-scroll;
+}
+
+#p2{
+    color: black;
+    cursor:pointer;
+}

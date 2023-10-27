@@ -1,0 +1,657 @@
+/* (07/07/23) Complete CSS Property Summary.
+
+/* there are three method to add css to html file
+(1) external method
+(2) internal method
+(3) inline method  --- among three inline has higher priority level.*/
+
+/* -------- CSS Selector --------- 
+(1) Element selector  -- 3rd priority level
+(2) Id selector   --- among three id selector has higher priority level
+(3) Class selector  -- 2nd priority level
+*/
+
+/* --------- Color in CSS --------
+(1) by predefined color name - Modern browsers support 140+ named colors (color range will be 0 to 255)
+
+(2) RGB  - (red,green,blue) - value between 0 to 255
+
+(3) RGBA - (red,green,blue,alpha) alpha used to make transparent color from 0 to 1.
+
+(4) HEX - syntax(#rrggbb) - range from 00 to ff.
+
+(5) HSL - (hue,saturation,lightness) - 
+hue is a degree on the color wheel from 0 to 360 
+saturation is percentage value of shade of gray
+lightness is percentage value of shade of light
+
+(6) HSLA - (hue,saturation,lightness,alpha) - alpha used for transparency
+*/
+
+/* --------- Background ---------- 
+{
+    background-color: white;
+    background-image: url("image directory");
+    background-position: left bottom;
+    background-attachment: "fixed","scroll","local";
+    background: "put every property and their value in a single line like: white left bottom url() contain etc.";
+    background-repeat: no-repeat;
+    background-size: contain('it will require a good ratio of image so that properly they can attached as a background and also they have good ratio aspect with div element')
+    background-size: cover("it will streched the image for total background size acquiring");    
+}
+*/
+
+/* NOTE: Any property follow this sequence TOP RIGHT BOTTOM LEFT */
+
+/* -------- Border ------------ 
+in border ther are 4 property
+(1) border-style  --- they also define as border-top-style
+(2) border-width
+(3) border-color
+(4) border-radius
+(5) border-collapse
+(6) border-spacing
+(7) border-sizing
+(8) border-bottom
+(9) border-block
+(10) border-image
+(11) border-inline
+(12) border  ,etc 
+border have various number of properties which we can use according to our requirements.
+*/
+
+/* --------- Height & Width -----------
+in height and width there are 4 property 
+(1) Height
+(2) Width
+(3) Min-width/height  - it declare the minimum required width or height of the html element.
+(4) Max-width/height - it declare the maximum required width or height of the html element.
+
+and these height and width are assign both in percentage or pixel but one at a time(% will always take from their parent body)
+*/
+
+/* ---------- padding --------- 
+it is the gap or space between the border and the content
+(1) padding 
+(2) padding-top
+(3) padding-bottom
+(4) padding-right
+(5) padding-left
+we can use both pixel or percentage as a unit but one a time(Note: here we cannot give the negative value)
+
+*/
+
+/* ---------- Margin ------------
+it is the gap or space between two border or element
+(1) margin
+(2) margin-top
+(3) margin-bottom
+(4) margin-right
+(5) margin-left
+we can use both pixel or percentage as a unit but one at a time(Note: here we can give the 'negative value')
+
+Note: it also show the margin collapse it means two margin will collapse but these collision will only show in 'top and bottom' margin and the collision will not show in 'left and right margin'.for ex:
+margin-top = 40px of one div
+margin-bottom = 50px of another div
+then margin collapse will be = (40px + 50px == 50px) 
+*/
+
+/* -------- Box Model --------- 
+margin -> border -> padding -> height/width -> content
+
+Note: when we set the width and height properties of an element with css we just set the width and height of the content area,to calculate the full size of an element we must also add padding,margin and border.
+
+*** total element width = width + left padding + right padding + left boder + right border + left margin + right margin.
+*** total elemtnt height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin.
+*/
+
+/* ----------- Text ------------ 
+There are various properties under the text method.
+(1) text-align -- left,right,center,justify
+(2) color 
+(3) direction  -- ltr,rtl
+(4) vertical align  --- through this we can align any element in between the text.
+(5) width & height
+(6) text decoration - underline,overline,line through
+(7) text-transform - uppercase,lowercase,etc.
+(8) line height 
+(9) word spacing
+(10) text indent - providing the space at the starting of the statement or line
+(11) letter spacing
+(12) white-space - pre,nowrap,normal,etc.
+(13) word-wrap - break-word,etc.
+(14) text-shadow - x-axis(horizontally) ,y-axis(vertically),blur ratio(in pixel),color of shadow.ex: 45px 10px 6px red; 
+(15) font
+(16) writing-mode - vertical-lr,vertical-rl 
+*/
+
+/* -------- Links --------- 
+There are 4 main properties we generally used with link
+(1) atag:link  - normal mode of link before any visit
+(2) atag:activate - the state after the clicking on the link
+(3) atag:hover - it's just a hover on the link
+(4) atag:visited - when we click on the click for just normal visit so that we can activate the link
+
+NOTE: the order should be same if we use all the link property a same time.
+*/
+
+/* --------- Fonts -----------
+(1) Font
+(2) Font-family
+(3) Font-weight
+(4) Font-variant
+(5) Font-style
+(6) Font-size
+(7) Font-display
+we can either use the pre-defined font or downloaded font from the google.
+*/
+
+/* ----------- CSS Units ------------ 
+there are two types of unit (1) Absolute (2) Relative
+(1) Absolute unit is futher divided into 6 unit 
+(1a) cm (1b) mm (1c) in (1d) px (1e) pt (1f) pc
+
+(2) Relative unit is futher divided into 5 unit
+(2a) Em (2b) Rem (2c) vh (2d) vw (2e) % 
+*/
+
+/* --------- CSS Cursor ------------
+this will change the cursor icon place to place if we want to do then only
+(1) cursor: auto
+(2) cursor: all-scroll
+(3) cursor: cell
+(4) cursor: col-resize
+(5) cursor: crosshair
+(6) cursor: pointer
+(7) cursor: e-resize
+(8) cursor: grab
+(9) cursor: not-allowed
+(10) cursor: help
+(11) cursor: progress
+(12) cursor: wait
+(13) cursor: zoom-in
+(14) cursor: zoom-out
+etc.
+*/
+
+/* --------------- CSS Important -------------
+This is used to declare the style is imortant or not.
+'!important' --- through this technique we can mention the style is important or not.
+but generally any developer do not recommand to use the important property for the styling the html or css element
+*/
+
+/* ------------ Box Shadow -----------
+box-shadow - x-axis y-axis blurrange blurspread color
+ex: 10px 24px 5px 6px grey (this will indicate the outer box-shadow)
+box-shadow - x-axis y-axis blurrange blurspread color inset(this inset indicate the inner box-shadow)
+ex: 10px 24px 5px 6px red inset()
+we can assign multiple box-shadow at a same time for ex:
+-10px -24px 5px 6px grey,12px 15px 4px 8px red
+we can also give the negative value
+*/
+
+/* ----------- CSS Opacity -------------
+Opacity will be used to make the transparent element the range of opacity will be from 0 to 1
+0 means fully transparent
+1 means no transparent
+Opacity - 0.5;
+*/
+
+/* ------------- CSS Filter -------------
+(1) filter: blur(10px)
+(2) filter: brightness(15px or 4%)
+(3) filter: contrast(3px)
+(4) filter: drop-shadow(8px 10px 5px red)
+(5) filter: grayscale(30%)
+(6) filter: hue-rotate(90deg)
+(7) filter: invert(30%)
+(8) filter: opacity(40%)
+(9) filter: saturate(50%)
+(10) filter: sepia(40%)
+(11) filter: brightness(30%),contrast(40%),sepia(60%) 
+we can assign multiple filter at a same time
+*/
+
+/* -------------- Image Sprites -------------
+we will see or study from another site
+*/
+
+/* ------------- CSS Gradients -------------
+mixing of two color is known as gradient.it is of two types
+(1) linear gradient (2) radial gradient
+NOTE: we need to use 'background-image property' to apply the gradient on it
+
+(1) Linear gradient - color mixes in a linear order.
+ex: background-image: linear-gradient(red,green,blue value);
+ex: background-image: gradient(to specify any direction,red,blue,green);
+ex: background-image: gradient(angle,red,blue,green);
+(2) Radial gradient - color mixes in a circular manner.
+ex: background-image: radial-gradient(red,green,blue)
+ex: background-image: radial-gradient(geometry,red,green,blue)
+ex: background-image: radial-gradient(geometry,red40%,green30%,blue50%)
+*/
+
+/* -------------- CSS Overflow --------------
+when content overflow from the container then at that place we will use overflow property
+generally we will use for 'block element'
+(1) overflow: auto;
+(2) overflow-x: hidden/scroll;
+(3) overflow-y: hidden/scroll;
+(4) overflow: hidden;
+(5) overflow: scroll;
+(6) overflow: visible;
+(7) overflow: block;
+(8) overflow: wrap;
+(9) overflow: anchor;
+(10) overflow-inline
+(11) text-overflow
+*/
+
+/* ------------- CSS Resize ----------- 
+This can be only used on Block element  
+(1) Resize: both
+(2) Resize: horizontal
+(3) Resize: vertical
+(4) Resize: none
+NOTE: Overflow should be scroll,hidden or auto then only they will applicable otherwise we can't apply the resizable css property on the block element.
+*/
+
+/* ------------- CSS List ------------
+This property generally used on the html list.(ordered & unordered list)
+(1) list-style-image: url("image path")
+(2) list-style-position: inside,outside,etc
+(3) list-style-type: decimal,roman,alphabet,etc
+(4) list-style:
+*/
+
+/* -------------- CSS Table -----------
+NOTE: tr(table row) does not take any border property
+we can use various number of property at a same time on a table just because they don't havae separate property for table.
+(1) table-layout: fixed,auto,etc.
+*/
+
+/* ------------ CSS Function ----------
+Yes we know that css is not a programming language but still they consist many functions like
+
+(1) calc function (calc()) ---->  css property: calc(original value - change in value).
+for ex: width: calc(100%-200px);
+
+(2) var function : it is defined by root keyword.for ex: 
+:root{ --mycolor: pink
+    --my-text : poppins
+}
+color: var(--mycolor);
+text: var(--my-text);  # this is a way to define the css var function.
+*/
+
+/* ------------- Box sizing -------------
+Box-sizing --- it is used to define the box size we will assign the value for adjusting the size of the box or content according to following requirements.
+(1) box-sizing: border-box;  it is used to define the size of the box (height & width) is provided to the border.
+(2) box-sizing: content-box; it is used to define the size of the content.(height & width) is provided to the content.
+*/
+
+/* ---------- Initial & Inherit -----------
+(1) Initial --- it takes the default value from the html.ex: link color is blue so its means the blue is given as default value and if we use the 'initial keyword' then this remains same.ex: font-size: initial; color: inherit;
+
+(2) Inherit --- it takes the value inheriently from their parents body.ex: rem & em they take the value inheriently from the html and they will adjust their height & width automatically.ex: font-size: inherit;  color:inherit;
+
+*/
+
+/* ------------ Object Fit -------------
+it will either use on image or video.it is generally use for the forground purposes.
+(1) Object-fit:  cover;
+(2) Object-fit:  contain;
+(3) Object-fit:  fill;
+(4) Object-fit:  none;
+
+(i) Object-position : top;
+(ii) Object-position : bottom;
+(iii) Object-position : right;
+(iv) Object-position : left;
+(v) Object : top bottom;top left;top right;etc......
+*/
+
+/* -------------- Pseudo-classes -----------
+there are various number of pseudo-classes in css so just refer from the google.
+Selector: pseudo-class{}
+ex: button:hover{}
+(1) htmlelement:first-child{ color: red}
+(2) htmlelement:last-child{color: blue}
+(3) htmlelement:active
+(4) htmlelement:any-link
+(5) ele:blank
+(6) ele:corner-present
+(7) ele:checked
+(8) ele:current
+(9) ele:decrement
+(10) ele:default
+(11) ele:defined
+(12) ele:only-child
+(13) ele:left
+(14) ele:dir
+(15) ele:hover
+(16) ele:nth-child()
+etc.........there are huge number of pseudo-classes which we will use according to our need.
+*/
+
+/* -------------- Pseudo-element ------------
+selector::pseudo-element{}
+(1) p::first-letter{color:blue}
+(2) p::first-line{color:red}
+(3) p::before{url(image.png)}
+(4) p::after{content:"good to go"}
+(5) p::selection{color:red; background:yellow;}
+etc......... there are large number of pseudo-elements which we need to use according to our requirements for different purposes.so,just google out these pseudo-element.
+*/
+
+/*(impo.)---------------- Display ----------------
+Each html element has some default value and they acquire rectangular size box,mainly they consist four property under the display section such as
+(1) block --- takes full width
+(2) inline-block --- takes required width
+(3) inline
+(4) none
+(5) contents
+(6) flex
+(7) flex-box
+(8) flow-root
+(9) grid
+etc.....
+
+Note: block ,inline & inline-block they have some property like:
+(1) block ---
+(1a) take full width
+(1b) take new line
+(1c) take heigth & width
+
+(2) inline ----
+(2a) do not take full width
+(2b) do not take new line
+(2c) do not take height & width
+
+(3) inline-block -----
+(3a) do not take new line
+(3b) do not take full width
+(3c) take width & height
+
+(4) none ----
+(4a) it will remove the html element from the web page
+(4b) it will not acquire the width & height after the usage of none property on html element.(they will remove totally)
+---- note : if we use the 'visibility:hidden' as a css property then at that place html element will not (remove)display but they will still acquire the space or position with same height & width. 
+
+*/
+
+/* -------------- Position ------------
+usually it is used to provide the position of the html element.they are mainly of five types
+(1) absolute --- it will take the new position with respect to the positioned parent(it means if any element is given as position then that element will be positioned parent for those one who want to apply absolute position on the html element) and if the positioned parent is not defined then the absolute will take the body as their positioned parent.and ye apni 'calculation positioned parent se start karenge' aur saath ke saath apni original position ko bhi permanently leave kar denge taki dusra koi uske position ko acquire kar sake.
+
+(2) relative --- it will take the new position from their respective original position(with respect to original positon) and they will not leave their position permanently and also they do not provide the access to other one to acquire their position.(apni hi jagah se calculation start karta hai)
+
+(3) fixed   --- isko ham viewport ke hisab se fixed karenge ye bhi apna position chhor deta hai taki koi dusra element us jagah aa sake.(absolute & fixed dono me hi sub-position dena jaruri hota hai).
+
+(4) static  --- it is a default position in html element
+(5) sticky
+
+the below sub-position property will only work when the above written property applied on the html element
+(i) top
+(ii) bottom
+(iii) left
+(iv) right
+
+ex: body{position: absolute}
+*/
+
+/* -------------- Layers & Z-index ------------ 
+Z-index --- will only work when we apply the position as relative,absolute & fixed.if we do not apply the position then Z-index will not execute or work.
+in the z-index minimum & maximum doesn't matter.
+higher the value of z-index higher position they will acquire.positioned element are also essential for this topic.
+Jis element pe bhi z-index lgana ho us element pe position property laga hua hona chahiye tabhi z-index apply hoga.
+*/
+
+/* -------------- Float & Clear ------------ 
+(1) Float --- it is used to move the content either left or right.
+if we want to apply the float on the content when content is present inside the box then at that time content wil come outside from that given box.hence we need to use 'overflow property at auto condition' so that we can avoid the overflow of content from the box.
+ex: float: right;
+overflow: auto; <---> to reduce the chances of overflowing of content from the box.jis chiz pe bhi float lagayenge wo container se bahar aa jayega to is se bachne ke liye overflow property ka use karna must hota hai.
+
+(2) Clear --- it will tell us that normal element or floated element will come or not to the right or left of the already applied floated element.
+clear property ka use floated element or normal element ko check karne ke liye kiya jata hai ki wo pehle se applied floated element ke right or left me aa sakta hai ya nahi.
+clear: left,right and both. in tino me se koi bhi use kar sakte hai.
+ex: clear: right; 
+*/
+
+/* ------------- CSS 2D Transforms ------------- 
+NOTE: It will only applied on 'Block and inline-block' element.they are not applicable on inline element but we can convert the inline element in block or inline-block by using the display property.
+
+Transform --- is used to rotate,move,squeeze,etc.the content. they have various types like
+(1) rotate()
+(2) translate()
+(3) skew()
+(4) scale()
+(5) matrix()
+(6) perspective()
+(7) matrix3d,rotate3d,translate3d,scale3d() etc.....
+(8) transform-origin
+
+ex: transform: translate(x-axis,y-axis);
+ex: transform: translate(50px,40px); (50px from x-axis & 40px from y-axis).
+ex: transform: rotate(20deg);
+ex: transform: scale(2,4);
+ex: transform: skew(x-axis,y-axis);
+ex: transform: skew(20deg,30deg);
+ex: tranform-origin: 0% 100% ; 
+transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); 
+matrix is a common method to apply transform property.
+*/
+
+/* ------------ CSS 3D Transform --------------
+In this transform we will mainly see the element in 3 dimension (x,y,z axis) and here we will see the perspective(element view) and perspective orgin (view angle of the element) 
+(1) transform: perspective(220px) translate3d(12px,0px,21px);
+(2) perspective-origin: 50% 40%; 
+these are two basic technique which we useda as 3d transform.
+NOTE: there are lot of content still remain untouched here so if we want to learn it then learn CSS3.
+*/
+
+/* -------------- CSS Transition -------------- 
+This property will be used to change the transition of the css property by various means.
+(1) Transition
+(2) Transition-property
+(3) Transition-duration
+(4) Transition-delay
+(5) Transition-timing-function
+
+we need to follow two things (i) ki hame ki chiz pe apna transition property lagana hai.
+(ii) transition se pehle aur baad me kya difference rakhna hai.
+ex: transition-property:width;
+ex: transiton-property: all;
+ex: transition-duration: 2s;
+ex: transition-timing-function: ease;
+
+transition ke baadh ke chahte hai wo likna hai.
+ex: selector:pseudoclass{ property: value}
+*/
+
+/* ------------- CSS Animation ------------
+Firstly we will create a key-frame by using @keyframe keyframename{
+    from {css property:value}
+    to {css property:value}
+}
+we can also use % instead of from & to.
+keyframename{
+    0% { css property:value}
+    100% { css property: value}
+}
+selectorname{
+    property:value;
+    animation-name:keyframename;
+    animation-duration:2s;
+    animation-delay;time (in sec or milli sec);
+}
+
+ex: @keyframe changeborder{
+    from{color: red}
+    to{color:pink}
+}
+.newdiv{
+    animation-name:changeborder;
+    animation-duration: 4s;
+}
+There are various types of animation property so use them according to your requirement.
+*/
+
+/* -------------- CSS Print Style -----------
+@media ---> it is used for print style purpose of webpage.
+
+Whenever we need to declare media then we must use "@media".
+*/
+
+/* -------------- Responsive Web Design-----------
+<--- refer from book ---> for better understanding.
+
+*/
+
+/* ------------- Viewport meta tag -------------
+NOTE: Without using viewport meta tag we cannot create a responsive web page or website.
+this tag will used in html file inside the 'head tag element'. 
+*/
+
+/* ------------- Media Queries -----------------
+This will help us to adjust the width of the webpage according to the width of the browser on different electronic devices.it is different from the @media which is generally used for print statement.
+
+ex: @media screen and(max-width: 560px){
+    #div{
+        width: 100%;
+    }
+    #div2{
+        width:100%;
+    }
+here we are using media query for screen mode where we set the screen size upto a certain maximum-width according to the mobile browser size. 
+
+we can also use for other css properties so that they can well display or organised on the mobile screen browser.
+it will be use for multiple times and also we can use 'minumum' to declare the size of the screen width.
+*/
+
+/* -------------- CSS Advance Selector -----------
+
+*/
+
+/* -------------- CSS Specificity --------------
+General Rule:
+(1) !important will override every thing
+(2) Inline can override everything except !important
+(3) External will work according to specificity.
+
+Specificity Rule:
+(1) (#) id selector has highest value
+(2) (*) universal selector has lowest value
+
+Note: if same rule written two or more times in external sheet then last rule will be applicable.
+
+Priority Level:
+(1) !important --- highest priority
+(2) line --- 2nd highest priority
+(3) id  --- 3rd highest priority 
+(4) class,attribute or pseudo-class  --- last 3rd lowest priority
+(5) element selector & pseudo-elements --- last 2nd lowest priority
+(6) universal selector --- lowest priority
+
+(suppose a specificity trick by point system)
+10,000 point to important
+1000 to inline
+100 to id
+10 to class,attribute or pseudo-class
+1 for element selector & pseudo-element
+0 to universal selector
+*/
+
+/* ---------------- CSS Multiple Columns -----------
+This is used to define the column on the webpage or we can divide the web page into multiple columns.they have various properties for column section like:
+(1) column-gap
+(2) column-rule
+(3) column-fill
+(4) column-count
+(5) column-width
+(6) column-rule-color
+(7) column-rule-width
+(8) column-span
+(9) columns
+etc........ these can be used at various places according to requirement.
+ex: selector{property: value};
+ex: div{column-span:3}
+*/
+
+/* ---------------- CSS Flexbox --------------
+This is a new feature of css which was introduced in 2009.this feature help us to create the attractive websites so that styling complication can be reduced.
+this flex comes under the display property of css.
+display: flex; if we apply on the parents section then child will also control through this flex section.
+
+(1) flex-direction:row;
+(2) flex-direction: row-reverse;
+(3) flex-direction: column;
+(4) flex-direction: column-reverse;
+(5) flex-wrap : wrap;
+(6) text-align : center;
+(7) flex-flow : row wrap (it will indicate direction & wrap)
+(8) justify-content : center (etc.)(it will work horizontally)
+(9) justify-content : flex-start ,flex-end,space-around,;
+(10) align-item : stretch,center; 
+(11) align-content : center (it will work vertically) 
+(12) flex-wrap : wrap,spacae-around,flex-start;
+(13) order : value (ex: order:1)
+(14) flex-grow:1;
+(15) flex-shrink: 3 (it will shrink the width by 3 times of original) 
+(16) flex-basis : 300px;(it will tell about initial width)
+(17) align-self: flex-start,center,flex-end;
+Note: it is one of the most important concept in css so learn carefully and also refer from books and css official documentation.
+*/
+
+/* ---------------- CSS Grid -----------------
+CSS Grid is the new Layout Model in css.from oct 2017 all major browser started supporting css grid.
+(1) Grid Columns --- The vertical lines of grid items are called columns.
+(2) Grid Rows --- The horizontal lines of grid items are called rows.
+(3) Grid Gaps --- The space between each column/row are called gaps.
+(4) Grid Lines --- The lines between columns are called columnn lines  && the lines between rows are called row lines.
+
+Grid comes under the display property
+display : grid;
+(1) grid-template-columns: 200px 60% 300px;
+(1a) grid-template-columns : auto auto auto;(these both statement will be used to divide the grid into the number of columns.
+
+(2) grid-template-rows: 100px 300px auto;(these statement use to provide the height of the grid)
+
+(3) grid-column-gap: 20px;
+(4) grid-row-gap : 20px; 
+
+(5) justify-content : start,flex-start,end,center,flex-end,space-between,space-around,space-evenly;
+(6) align-content : space-between,start,end,space-around.etc.
+
+(7) we can join the column grid line by following three ways:
+(7) grid-line-start : 1;
+(7) grid-line-end : 3;  (here we want to join the grid column & row line 1 & 3);
+
+(7a) grid-column-start: 1;
+(7b) grid-column-end: 3;
+(7c) grid-column: 1/3;
+(7d) grid-column: 1/ span 3;
+
+(8) in the same way we can also join the row grid line by following three ways:
+(8a) grid-row-start: 1;
+(8b) grid-row-end: 3;
+(8c) grid-row: 1/3;
+(8d) grid-row: 1/span 3;
+
+(9) grid-area: start point end point;
+grid-area: starting-row-line/starting-column-line/ending-row-line/ending-column-line;
+ex: 1/2/3/5;
+ex: 1/2/span 3/span 5;
+NOTE: we can also define the grid name by using the grid area property.
+ex: grid-area : footer;
+(10) grid-template-area: 
+We can refer to official documentation for better understanding and also try to refer from the books for more clarity.
+*/
+
+/* ----------------- CSS Validations ------------
+--> Here we can check the css whatever we write on the css sheet is correct or not ?
+--> For that purpose we will use online css validation sites known as W3C(css validation service) through which we can check the css.
+--> For that we will use either URL or UPLOAD the file directly on the W3C Site.
+--> We can Direct provide the css input on the W3C site.
+*/ 

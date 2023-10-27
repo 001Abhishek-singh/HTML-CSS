@@ -1,0 +1,10 @@
+img{
+    border: 2px solid black;
+    height: 230px;
+    width: 220px;
+    object-fit:scale-down;
+    object-position:center;
+    /* This is basically used for forground image and it will used for the arrangment in the forground image, try to refer from gfg or book to uderstand about the objectfit*/
+
+    /*background-size and background-image are similar to object-fit and object-position but it is different from each other because background-size will use for the 'background image' property and object-fit will be use for 'forground image'.*/
+}

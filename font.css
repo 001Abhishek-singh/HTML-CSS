@@ -1,0 +1,44 @@
+/*how to create or add new font-family in html & css and also check which font will work on all the browsers.*/
+
+.p1{
+    color: red;
+}
+
+
+/* here we will learn how to add the font style/family  in the css page so that we can create an attractive web page hence for this we need to follow some of the steps like: 
+
+@font-face{
+    Note: if we want to mention the font name in two words then we write that word in single/double quotation mark.for ex: 'font 123' otherwise write the font name without any quotation ex: abc.
+
+    font-family: mention your font name;
+    src:url('font location');
+}
+*/
+
+@font-face{
+    font-family: abc;
+    src:url('/Fonts/Nestocopper42-1GVw2.ttf')
+}
+
+
+#g1{
+    /*font-style: oblique;*/
+    
+    /*font-family: 'Poppins', sans-serif;google downloaded font family*/
+    font-family: abc ,'Poppins', sans-serif;
+
+    
+}
+
+#g2{
+    /*font-size: 24px;
+    font-weight: 200;
+    font-display:inherit ;
+    font-variant: small-caps;*/
+    font-size: 24px;
+    font-weight:700;
+    font-display: inherit;
+    font-variant: small-caps;
+    color: darkorange;
+    font-family: abc;
+}

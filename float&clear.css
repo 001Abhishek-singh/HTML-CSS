@@ -1,0 +1,42 @@
+#p1{
+    border: 1px solid greenyellow;
+    background-color: azure;
+    overflow: auto;
+}
+#p2{
+    height: 42px;
+    width: 42px;
+    float:left; 
+    background-color: azure;
+}
+
+#g1{
+    margin: 12px 0px 12px 0px;
+    background-color: beige;
+    border: 2px solid firebrick;
+    overflow: auto;
+}
+
+li{
+    /* we are creating a navigation bar with the help of 'float method'*/
+    padding: 6px 10px 16px 10px;
+    list-style-type: none;
+    float: left;
+
+}
+
+#p3{
+    margin: 12px 0px 10px 0px;
+    border: 1px solid rebeccapurple;
+    overflow: auto;
+}
+
+#g3{
+    float: right;
+}
+
+#g4{
+    /* here we are using the clear method.*/
+    float: left;
+    clear: both;
+}

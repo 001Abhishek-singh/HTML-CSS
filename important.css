@@ -1,0 +1,13 @@
+#p1{
+    color: red;
+}
+
+#p2{
+    color: blueviolet !important;
+}
+
+#p2{
+    color: red;
+}
+
+/* as we know the priority level in the css selector, where inline selector has higher priority than external or element selector but as we applied the '!important' keyword now the priority has been changed and also here order doesn't matters.*/

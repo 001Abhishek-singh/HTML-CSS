@@ -1,0 +1,17 @@
+#g1{
+    background-color: cadetblue;
+    height: 220px;
+    box-sizing:border-box;
+    padding: 20px;
+    border: 5px groove black;
+    /*if we use the border-box then the height and width will be assign after including the border of the content.*/
+}
+
+#g2{
+    background-color: crimson;
+    height: 220px;
+    padding: 20px;
+    border: 5px groove black;
+    box-sizing: content-box;
+    /*if we use the content-box then the height and width will assign to content rather than container(element box) and padding will add after excluding the border.*/
+}

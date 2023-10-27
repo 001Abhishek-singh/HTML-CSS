@@ -1,0 +1,70 @@
+/* here we are using the 'absolute units in css */
+#g1{
+    /*here we are using the 'px' as a unit average(1 inch = 96px) */
+    color: black;
+    font-size: 23px;
+}
+
+#g2{
+    /* here we are using the 'pt' as a unit average(1 inch = 72pt) */
+    color: brown;
+    font-size: 23pt;
+}
+
+#g3{
+    /* here we are using the 'pc' as a unit average(1 pc = 12pt or 1 inch = 6pc) */
+    color: cadetblue;
+    font-size: 3pc;
+}
+
+#g4{
+    /* here we are using the 'In' as a unit */
+    color: crimson;
+    font-size: 0.5In;
+}
+
+#g5{
+    /* here we are using the 'mm' as a unit */
+    color: darkorchid;
+    font-size:13mm;
+}
+
+#g6{
+    /* here we are using the 'cm' as a unit */
+    color: indianred;
+    font-size: 2cm;
+}
+
+#p1{/* this is the example of 'vh & vw' where we will see how to adjust the size of the viewport.*/
+    border: 2px solid blueviolet;
+    height: 50vh;
+    width: 50vw;
+}
+
+#p2{/* this is the example of 'vh & vw' where we will see how to adjust the size of the viewport.*/
+    border: 2px groove red;
+    height: 30vh;
+    width:  30vw;
+}
+
+#p1{/* this is the example of 'em & rem' where we will see how to adjust the size of the font relatively either by the size of the parents or by html tag.*/
+    border: 2px solid blueviolet;
+    font-size: 0.8rem;
+}
+
+html{/* this is the size of the html tag*/
+    font-size:32px;
+}
+
+#p2{/* this is the example of 'em' where we will see how to adjust the size of the font relatively either by the size of the parents or by html tag.*/
+    border: 2px groove red;
+    font-size: 0.6em;
+    /* here 'em' take the relative value from the parents and then assign the size of the font*/
+}
+
+#p2{/* this is the example of 'rem' where we will see how to adjust the size of the font relatively either by the size of the parents or by html tag.*/
+    border: 2px groove red;
+    font-size: 0.6rem;
+    /* here 'rem' take the relative value from the html tag and then assign the size of the font*/
+}
+

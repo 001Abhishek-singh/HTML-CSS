@@ -1,0 +1,51 @@
+#g1{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: burlywood;
+    position: static;
+    
+}
+
+#g2{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: blueviolet;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1;
+}
+
+#g3{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: skyblue;
+    position: relative;
+    bottom: -30px;
+    right: -10px;
+    z-index: 2;
+}
+
+#g4{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color:seagreen;
+    position:relative;
+    bottom: -40px;
+    right: -10px;
+    z-index: 3;
+}
+
+#g5{
+    border: 1px groove black;
+    padding: 20px;
+    margin: 40px;
+}

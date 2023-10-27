@@ -1,0 +1,40 @@
+#g1{
+    border: 2px solid black;
+    border-collapse: separate;/* it will collapse the border of the table*/
+    border-spacing: 20px 15px;
+    /*if we want to use the border-spacing then for that we need to use border-collapse as 'separate' otherwise it will not work*/
+    empty-cells: hide;
+    width: 230;
+    table-layout: fixed;
+    background-color:cadetblue;
+}
+
+tr{
+    border:1px solid black
+    /*This indicate that border does not apply on the row.*/
+
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+    /* margin will not work in the table*/
+    text-align: center;
+    vertical-align: bottom;
+   
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+caption{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    caption-side:top;
+    background-color: burlywood;
+}

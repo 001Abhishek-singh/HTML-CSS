@@ -1,0 +1,49 @@
+/*In this position section we will learn how to adjust the position in the website.so for that purpose we have four position set such as: (1) static (2) absolute (3) relative (4) fixed position."for the defination refer from w3school".
+In these position set we will also use four sub-position set like as: (1) top (2) bottom (3) left (4) right. */
+
+#g1{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: burlywood;
+    position: static;
+}
+
+#g2{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: blueviolet;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+
+#g3{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color: skyblue;
+    position: absolute;
+    top:10px;
+}
+
+#g4{
+    border: 1px solid tomato;
+    height: 40px;
+    width: 10%;
+    display: inline-block;
+    background-color:seagreen;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#g5{
+    border: 1px groove black;
+    padding: 20px;
+    margin: 40px;
+}

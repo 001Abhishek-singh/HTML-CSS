@@ -1,0 +1,34 @@
+/* in css there are three basic type of selector which is used to select the elements of the html.*/
+
+/* this is the best example of 'element selector' in css-html*/
+div{
+    color: red;
+    font-size: 24px;
+}
+
+/* this is the example of 'id selector' in css-html. 
+id selector will be always represented by '#' 
+id should by unique for every element*/
+#p3{
+    color: blue;
+}
+
+#p5{
+    color: green;
+}
+
+/* this is the example of 'class selector' in css-html. 
+class selector will be always represented by '.' 
+class can be used for multiple elements or for multiple places*/
+.color-purpose{
+    color: lightsalmon;
+}
+
+.mycolor{
+    color: lightseagreen;
+}
+
+#p2{
+    font-size: 24px;
+}
+

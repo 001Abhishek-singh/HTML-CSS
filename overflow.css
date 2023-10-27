@@ -1,0 +1,10 @@
+#g1{
+
+    color: blueviolet;
+    border: 2px solid red;
+    height: 240px;
+    width: 200px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    /*overflow: auto;*/
+}

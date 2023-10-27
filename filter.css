@@ -1,0 +1,13 @@
+/* basically this filter will be use only on the images so that we can make it attractive.*/
+
+img{
+    filter: blur(4px);
+    filter: brightness(50%);
+    filter: contrast(40%);
+    filter: opacity(50%);
+    filter: hue-rotate(60deg);
+    box-shadow: 12px 14px 5px red
+    /* for providing the shadow we can also use the drop-shadow*/
+
+
+}

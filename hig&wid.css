@@ -1,0 +1,22 @@
+/*
+#g1{
+    background-color: cyan;
+    height: 800px;
+    width: 800px;
+}
+*/
+
+#p1{
+    border: 1px solid red;
+   
+}
+
+#g1{background-color: cyan;
+    height: 40%;
+    width: 60%;
+    max-width: 400px ;
+    max-height: 80px;
+    min-width: 30px ;
+    min-height: 100px ;
+}
+

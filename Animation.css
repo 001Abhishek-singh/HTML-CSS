@@ -1,0 +1,21 @@
+@keyframes changestyle{
+    0% {background-color: burlywood;}
+
+    25%{background-color:antiquewhite; border: 4px groove blueviolet;}
+
+    50%{background-color:palegreen; padding: 4px;}
+
+    75%{background-color:plum; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;}
+
+    100%{background-color:peru; transform: rotate(-90deg);}
+}
+
+#p1{
+    animation-name: changestyle;
+    animation-duration: 10s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}

@@ -1,0 +1,28 @@
+/* here we will learn about the pseudoelement and there types*/
+div::after{
+    content: " by abhishek";
+    /* basically here we are adding the content dynamically to the html */
+}
+
+div::before{
+    content: "In css " ;
+}
+
+div:last-child::first-line{
+    color: blueviolet;
+    background-color: bisque;
+
+    /* here as we can see that we are using the Pseudoclass and pseudoelement at the same time*/
+}
+
+::selection{
+    color: salmon;
+    background: grey;
+    /* here we assign the value of text what's the background color and what color will be shown during the selection of the text*/
+}
+
+::grammar-error{
+    color: red;
+    cursor:cell;
+}
+

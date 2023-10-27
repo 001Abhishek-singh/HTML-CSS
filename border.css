@@ -1,0 +1,17 @@
+#g1{
+    background-color:aquamarine ;
+}
+
+.g3{
+    border-style:double dashed groove solid;
+    /* border-style: top right bottom left */
+    border-width: 8px;
+    border-color:royalblue red yellow seagreen;
+    /* border-color: top right bottom left */
+    /* border shortcut: width style color */  
+    border-radius: 22px;
+    border-top-right-radius: 210px;
+    border-top-width: 20px;
+    border-bottom-style: groove;
+    
+}

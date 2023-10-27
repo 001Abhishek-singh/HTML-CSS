@@ -1,0 +1,16 @@
+#g1{
+    /*background-image: linear-gradient(yellow,green);*/
+
+    /*background-image: linear-gradient(to right,pink, yellow,green)*/
+
+    /*we need to use background-image for taking the color under the gradient.we can also change the direction of the gradient'linear-gradient(to direction colorname)'.*/
+
+    /*background-image:linear-gradient(180deg, yellow,green);*/
+
+    /*background-image: radial-gradient(circle,yellow 20%,green 80%);*/
+
+    height: 440px;
+    border: 2px groove rebeccapurple;
+    /*background-image: linear-gradient(120deg,red,blue);*/
+    background-image: radial-gradient(circle,red 40%,blue 60%);
+}

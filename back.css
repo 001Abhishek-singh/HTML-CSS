@@ -1,0 +1,21 @@
+#g1{
+    background-color: cyan;
+}
+
+#g2{
+    background-color: blueviolet;
+}
+
+#g3{
+    background-image: url(mac_image_3.png
+    ),url(logo.png);
+    background-position: left bottom,right bottom ;
+    background-repeat: no-repeat;
+    /*background-color: pink;
+    background-repeat: no-repeat;
+    background-position: 5% 35%;
+    background-size: 320px 200px;
+    background-attachment:fixed;
+    background: color image repeat position size attachment;*/
+
+} 

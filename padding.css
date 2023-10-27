@@ -1,0 +1,9 @@
+#g1{
+    border: 1px solid red;
+    padding-top: 45px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-bottom: 35px;
+    padding: 25px 50px 30px 70px;
+    /* padding: top right bottom left;*/
+}

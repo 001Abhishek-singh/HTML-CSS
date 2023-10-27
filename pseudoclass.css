@@ -1,0 +1,9 @@
+p:last-child{
+    color:red;
+    /*HERE last-child is a pseudoclass which will use to highlight the text in red color.*/
+}
+
+p:nth-child(2n+2){
+    color: burlywood;
+}
+/* Note: there are various number of pseudoclass which we will use according to our need and usage*/

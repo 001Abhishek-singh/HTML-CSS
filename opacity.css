@@ -1,0 +1,20 @@
+/* Opacity will be use to do blur the element or image from the range of 0-1.*/
+p{
+    border: 2px groove coral;
+}
+
+#p1{
+    border: 2px solid violet;
+    color: coral;
+    margin: 20px;
+    padding: 40px;
+    background-color: aquamarine;
+    opacity: 0.5;
+    /*opacity wil be given from the range of 0-1 without using the pixel as suffix.*/
+}
+
+#p2:hover{
+    border: 2px groove violet;
+    opacity: 0.4;
+    cursor: pointer;
+}

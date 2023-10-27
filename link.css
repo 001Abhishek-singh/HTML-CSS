@@ -1,0 +1,35 @@
+#p1{
+    color: red;
+}
+
+/* in html-css links are classiifed into four different states.
+(1) Normal state/link state- the link are in normal state
+(2) Visited state - when we visited on the link
+(3) Hover state - when we take the cursor on the link
+(4) Active state - when we click on the link  
+
+the priority will be same as we arrange the state of link
+ we can't change the order when they all are present.
+*/
+
+#p1:link{
+        color: aqua;
+        text-decoration: none;
+        font-style: italic;
+}
+
+#p1:visited{
+        color:rebeccapurple;
+        text-decoration: none;
+}
+
+#p1:hover{
+        color: chocolate;
+        text-decoration: none;
+        font-size: larger;
+}
+
+#p1:active{
+        color: blue;
+        text-decoration: none;
+}

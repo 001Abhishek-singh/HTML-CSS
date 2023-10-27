@@ -1,0 +1,25 @@
+.p1{
+    border: 2px groove black;
+    margin: 25px;
+    margin-top: 22px;
+    margin-bottom:22px;
+    /*margin-bottom: -25px; we can also assign the negative value to the margin*/
+    margin-left:20px;
+    margin-right:20px;
+    /* margin 23px 45px 30px 28px; 
+    margin top right bottom left;*/
+    /* margin collapse work only in top-bottom condition
+    but this will not work in left & right condition.*/
+}
+
+#g1{
+    background-color: cyan;
+}
+
+#g2{
+    background-color: burlywood;
+}
+
+#g3{
+    background-color: aquamarine;
+}

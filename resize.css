@@ -1,0 +1,15 @@
+/*textarea{
+    resize: both;
+}*/
+
+#g1{
+    height: 240px;
+    width: 230px;
+    border: 2px groove blueviolet;
+    /* overflow:visible; ---> not working if we use the visible command in overflow with resize command*/
+    overflow: auto;
+    resize:both;
+    resize: horizontal;
+    /* if we want to use the resize command in div then we must need to use overflow too because it will not use these two things at a same time then 'resize' will not work properly.
+    in resize command order will also matters so last query will give higher priority.*/
+}

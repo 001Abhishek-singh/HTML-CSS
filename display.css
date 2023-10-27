@@ -1,0 +1,39 @@
+/* in this concept we will learn about the 4 properties of the display such as: (1)block (2) inline (3) inline-block (4) none */
+
+#g1{
+    color: brown;
+    display: block;
+    border: 2px solid black;
+    /*height: 210px;
+    width: 100%;*/
+}
+
+#g2{
+    color: lightblue;
+    display: inline;
+    height: 210px;
+    width: 3pt;
+    border: 2px solid black;
+}
+
+#g3{
+    color: tomato;
+    display: inline-block;
+    border: 2px solid black;
+    height: 2px;
+    width: 3px;
+}
+
+#g4{
+    color: black;
+    display: none;
+    border: 2px solid black;
+}
+
+#g5{
+    color: darkmagenta;
+    visibility: hidden;
+    border: 2px solid black;
+    height: 220px;
+    width: 210px;
+}

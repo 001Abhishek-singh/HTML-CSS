@@ -1,0 +1,29 @@
+#p1{
+    color: blueviolet;
+}
+
+#g1{
+    color: black;
+}
+
+#g2{
+    color: initial;
+    /*every css element has a pre-defined value or property which they will use if we do not assigning the value or any kind of property.*/
+}
+
+#g3{
+    color: inherit;
+    /*basically it will inherit the properties of their parents.*/
+}
+
+#p2{
+    color: coral;
+}
+
+#q1{
+    background-color: bisque;
+}
+
+#p3{
+    color: initial;
+}

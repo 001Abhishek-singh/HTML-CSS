@@ -1,0 +1,23 @@
+:root{
+    --mycolor:red;
+    --buttoncolor:blueviolet;
+    /* we can create the 'variable' in the css by taking some simple steps:  put semicolon then root{ --variable name: assign value;}
+    for ex: :root{
+        --myvariable:border:23px;}
+        */
+}
+#g1{
+    height: 200px;
+    width: calc(100% - 200px);  /*calc is a useful function of the css*/
+    background-color:var(--mycolor);
+}
+
+#g2{
+    height: 20px;
+    width: 30px;
+    padding: 10px;
+    background-color:skyblue;
+    color:var(--buttoncolor);
+    text-decoration: none;
+
+}

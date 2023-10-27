@@ -1,0 +1,16 @@
+#p1{
+    border: 2px solid silver;
+    background-color: pink;
+    padding: 4px 4px 4px 20px;
+    width: 50px;
+
+    /*transform: translate(23px,26px);*/
+    /*transform: rotate(-45deg);*/
+    transform: scale(2,3);/*here we are multiplying with current height and width by passing the following integer*/
+    /* transform:skew(10deg,5deg); */
+    transform: skew(20deg);
+    transform-origin: 60% 50%;
+    
+    /* transform: matrix(scale(0.7,0.3),skew(20deg),translate(34px,32px),rotate(60deg)); */
+
+}
